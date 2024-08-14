@@ -1,0 +1,70 @@
+.productCard {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.productCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.productCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.productCard:hover img {
+    transform: scale(1.05);
+}
+
+.textPart {
+    padding: 1rem;
+}
+
+.textPart p {
+    margin: 0;
+}
+
+.textPart .font-bold {
+    font-size: 1rem;
+    color: #333;
+    opacity: 0.6;
+}
+
+.textPart .font-semibold {
+    font-size: 1.125rem;
+    color: #333;
+}
+
+.textPart .line-through {
+    font-size: 1rem;
+    color: #888;
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.textPart .text-green-600 {
+    color: #28a745;
+    font-size: 1rem;
+}
+
+.textPart .opacity-60 {
+    opacity: 0.6;
+}
+
+.textPart .space-x-2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
